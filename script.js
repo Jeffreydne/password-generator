@@ -130,9 +130,15 @@ console.log(numChar, lowCase, upperCase, nums, specChars, typeCharArr);
       charsToUse = [...charsToUse, ...specCharStr]
     }
   }
+  //use Math.random in a for loop to generate the characters for the password into an array
+  let passwordCharArr = [];
+  for (let j = 0; j < numChar; j++) {
+    passwordCharArr.push(charsToUse[Math.floor(Math.random() * charsToUse.length)])
+  }
     console.log(charsToUse);
-    
-    return "hello";
+    console.log(passwordCharArr);
+
+    return "Your password is:  " + passwordCharArr.join('');
   }
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
