@@ -24,16 +24,31 @@ The user inputs the number of characters &amp; what types of characters are desi
 
 ## Code Example
 
-The below JavaScript example shows how I use 
+The below JavaScript example shows how I use the prompt method to let a user input 'yes' or 'no' after reading the statement telling them to state whether or not they want to use lower case letters in their random password. I then use an if statement to make sure they have actually entered either 'yes' or 'no'. If not an alert is displayed telling them they must do so and the prompt is then repeated. If they do enter yes, then the string "lowCase" is pushed into the empty array which was declared at the top of this code snippet. This code block is then repeated for the other 3 possible types of characters to use which are upper case letters, numbers, and special characters. At the end of these 4 blocks of code there will be an array that includes each of the character types that the users wants to use in their random password.
 
 ```JS
-   
+      const typeCharArr = [];
+    //ask if lower case characters are desired
+    let lowCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
+    if (lowCase !== "yes" && lowCase !== "no") {
+      alert("Please type you answer using only lower case letters and it must be exactly yes or exactly no. It cannot contain spaces or other characters. ")
+      lowCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
+    } 
+    // I did not do an "else if" here because that resulted in a bug when user inputs an incorrect answer
+    if (lowCase === "yes") {
+      typeCharArr.push("lowCase");
+    }
  
 ```
+Once the user has entered which of the character types they want to use, an array is populated & stored in the variable "charsToUse", which will include each possible character that can be used, reflecting the users choices.  The javascript for this process is not shown. The below snippet shows how I then declare an empty array called "passwordCharArray" and how I populate that array to contain each of the characters in the randonly generated password. To do this I use a for loop and the Math.floor & Math.random methods to randomly pick an index number to pick a random member of the array "charsToUse" and then I use passwordCharArr.push method to push those values into the "passwordCharArr" array, with a new random character added each time through the loop. The loop will run for the number of times that the user has chosen as their desired password length (stored in the variable "numChar"). Once this loop is completed the return statement of the function will be the string "Your Password is: ", concatenated to the actual password, which is provided as a string using the join method (which converts the individual members of the array into a single string). Other code not shown then places this string into the webpage showing the user their new password.   
 ```JS
-  XXXXXXXXXX
-  XXXXXXXXXX
-  
+      //use Math.random in a for loop to generate the characters for the password into an array of specified length
+      let passwordCharArr = [];
+      for (let j = 0; j < numChar; j++) {
+        passwordCharArr.push(charsToUse[Math.floor(Math.random() * charsToUse.length)])
+      }
+    //convert the array of characters generated into a string with the join method and return it
+        return "Your password is:  " + passwordCharArr.join('');
 ```
 ## Usage
 
