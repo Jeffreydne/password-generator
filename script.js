@@ -14,7 +14,7 @@ function writePassword() {
     //ask if lower case characters are desired
     let lowCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
     if (lowCase !== "yes" && lowCase !== "no") {
-      alert("Please type you answer using only lower case letters and it must be exactly 'yes' or exactly 'no'. It cannot contain spaces or other characters. ")
+      alert("Please type you answer using only lower case letters and it must be exactly yes or exactly no. It cannot contain spaces or other characters. ")
       lowCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
     } 
     // I did not do an "else if" here because that resulted in a bug when user inputs an incorrect answer
@@ -24,7 +24,7 @@ function writePassword() {
     // Ask if upper case letters are desired 
     let upperCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include upper case letters?");
     if (upperCase !== "yes" && upperCase !== "no") {
-      alert("Please type you answer using only lower case letters and it must be exactly 'yes' or exactly 'no'. It cannot contain spaces or other characters. ")
+      alert("Please type you answer using only lower case letters and it must be exactly yes or exactly no. It cannot contain spaces or other characters. ")
       upperCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
     } 
     // I did not do an "else if" here because that resulted in a bug when user inputs an incorrect answer
@@ -34,7 +34,7 @@ function writePassword() {
     // Ask if numbers are desired
     let nums = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include numbers?");
     if (nums !== "yes" && nums !== "no") {
-      alert("Please type you answer using only lower case letters and it must be exactly 'yes' or exactly 'no'. It cannot contain spaces or other characters. ")
+      alert("Please type you answer using only lower case letters and it must be exactly yes or exactly no. It cannot contain spaces or other characters. ")
       nums = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
     } 
     // I did not do an "else if" here because that resulted in a bug when user inputs an incorrect answer
@@ -44,7 +44,7 @@ function writePassword() {
     // Ask if special characters are desired
     let specChars = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include special characters?");
     if (specChars !== "yes" && specChars !== "no") {
-      alert("Please type you answer using only lower case letters and it must be exactly 'yes' or exactly 'no'. It cannot contain spaces or other characters. ")
+      alert("Please type you answer using only lower case letters and it must be exactly yes or exactly no. It cannot contain spaces or other characters. ")
       specChars = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
     } 
     // I did not do an "else if" here because that resulted in a bug when user inputs an incorrect answer
