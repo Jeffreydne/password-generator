@@ -24,7 +24,7 @@ The user inputs the number of characters &amp; what types of characters are desi
 
 ## Code Example
 
-The below JavaScript example shows how I use the prompt method to let a user input 'yes' or 'no' after reading the statement telling them to state whether or not they want to use lower case letters in their random password. I then use an if statement to make sure they have actually entered either 'yes' or 'no'. If not an alert is displayed telling them they must do so and the prompt is then repeated. If they do enter yes, then the string "lowCase" is pushed into the empty array which was declared at the top of this code snippet. This code block is then repeated for the other 3 possible types of characters to use which are upper case letters, numbers, and special characters. At the end of these 4 blocks of code there will be an array that includes each of the character types that the users wants to use in their random password.
+The below JavaScript example shows how I use the prompt method to let a user input 'yes' or 'no' after reading the statement directing them to state whether or not they want to use lower case letters in their random password. I then use an if statement to make sure they have actually entered either 'yes' or 'no'. If not an alert is displayed telling them they must do so and the prompt is then repeated. If they do enter yes, then the string "lowCase" is pushed into the empty array which was declared at the top of this code snippet. This code block is then repeated for the other 3 possible types of characters to use which are upper case letters, numbers, and special characters. At the end of these 4 blocks of code there will be an array that includes a string representing each of the character types that the users wants to use in their random password.
 
 ```JS
       const typeCharArr = [];
@@ -63,13 +63,19 @@ This webstie is designed to give any interested party an ability to obtain a ran
 
 During the making of this portfolio I implemented JavaScript to provide the logic for generating a random, strong password, keeping in mind best practices. 
 
-* XXXXXXX
+* A skeleton website was provided that would populate the return value of a function into a box telling a user what their randomly generated password is. I provided the javascript logic to obtain the information from the user as to how many characters the password should be, and which of 4 character types would be included (lower case letters, upper case letters, numbers and special characters were the 4 options).
 
-* XXXXXXX
+* I use javascript functions to return a randomly generated string which represents a password that the user can use for a webstie.
 
-*  XXXXXXX 
+* I use the "window.prompt" method to have a user let the function know how many charcters are desired, and which types of characters are desired. For the number of characters. the "Number method" is used to convert the response (which is a string) into a number, and that is stored in a variable to use later.
 
-*  XXXXXXX
+*  "If statements" are used in one case with the "or" logical operator ( || ), in other cases with the "and" logical operator ( && ) as well as with comparison operators (such as <, >, !==) to be sure the user has entered a valid number or string. If not I use the "alert method" to cause an alert box to pop up, telling them what to do.  
+
+* I use a series of "if statements" to populate the array of characters I want to use as possible characters in the password, reflecting the choices of the user. I use the "spread operator ( ... )" to add additional character types (each type stored in its own array). Only the character types indicated by the user are pushed into the final array "passwordCharArr".
+
+* I use a "for loop" with a limit value to reflect the number the user has chosen as the number of characters. Each time through the loop a random number is genrated between 0 and the number of possible characters that are in the array. I use "Math.floor(Math.random() * charsToUse.lentgth)" to acheive this, and then that randomly generated number is used as the "array index number" to pick a random character from the array. Then using the push method this character is added to the array stored in the variable "passwordCharArr".
+
+* Once the loop reaches the limiting value, and has therefore produced an array with the number of characters desired for the password, the return value of a string is generated and the password is presented to the user as a string by using "passwordCharArr.join('');" which displays each member of the array, in a string,  without any spaces or other characters. 
 ---
 
 ## Author Info
@@ -78,7 +84,7 @@ During the making of this portfolio I implemented JavaScript to provide the logi
 ### Jeffrey Nelson
 
 
-* [Portfolio]( https://jeffreydne.github.io/Jeff-Nelson-Portfolio/cd .)
+* [Portfolio]( https://jeffreydne.github.io/Jeff-Nelson-Portfolio/)
 * [LinkedIn](https://www.linkedin.com/in/jeffrey-nelson13/)
 * [Github](https://github.com/Jeffreydne)
 ```
@@ -86,5 +92,5 @@ During the making of this portfolio I implemented JavaScript to provide the logi
 ---
 ## Credits
 
-Note: I initially enrolled in the full time Fullstack Bootcamp beginning in September 2023. I began working on this just as I made the decision to transfer into the part time bootcamp that I am in now. I wrote the bulk of the code while waiting for the part time camp to begin, using concepts covered in the full time bootcamp. The HTML and CSS were both provided by The excellent staff at UC Berkeley Extension Full Stack Bootcamp. They also provided the JavaScript Skeleton that allowed the DOM manipulation to take place and the beginings of the table of technology used in this README.md. I contributed the bulk of the Javascript which provided the logic for the functioning of the password generator.
+Note: I initially enrolled in the full time Fullstack Bootcamp beginning in September 2023. I began working on this project just as I made the decision to transfer into the part time bootcamp that I am in currently. I wrote the bulk of the code while waiting for the part time camp to begin, using concepts covered in the full time bootcamp. The HTML and CSS were both provided by The excellent staff at UC Berkeley Extension Full Stack Bootcamp. They also provided the JavaScript Skeleton that allowed the DOM manipulation to take place and the beginings of the table of technology used in this README.md. I contributed the bulk of the Javascript which provided the logic for the functioning of the password generator.
 
