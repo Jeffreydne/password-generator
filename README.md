@@ -24,7 +24,7 @@ The user inputs the number of characters &amp; what types of characters are desi
 
 ## Code Example
 
-The below JavaScript examples show how I use 
+The below JavaScript example shows how I use 
 
 ```JS
    

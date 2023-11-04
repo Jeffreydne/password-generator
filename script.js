@@ -6,11 +6,12 @@ function writePassword() {
     //Get input data from prompt commands
     // Start with number of characters
     let numChar = Number(window.prompt("Please enter the number of characters you want in your password (at least 8 and no more than 128 characters)"));
-    const typeCharArr = [];
+    
     if (numChar < 8 || numChar > 128) {
       alert("Please enter a number between 8 and 128");
       numChar = Number(window.prompt("Please enter the number of characters you want in your password (at least 8 and no more than 128 characters)"));
     } 
+    const typeCharArr = [];
     //ask if lower case characters are desired
     let lowCase = prompt("Please type 'yes' or 'no' in all lower case letters: Do you want your password to include lower case letters?");
     if (lowCase !== "yes" && lowCase !== "no") {
