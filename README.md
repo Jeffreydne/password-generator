@@ -54,9 +54,8 @@ Once the user has entered which of the character types they want to use, an arra
 
 This webstie is designed to give any interested party an ability to obtain a randomly generated, strong password, based on their criteria for number of characters, as well as types of characters to use (which can include upper and/or lower case letters as well as numbers and special characters). 
 
-```md
+
 ![ alt text](assets/images/password-generator-screenshot.png)
-```
 ---
 
 ## Learning Points
