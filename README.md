@@ -15,7 +15,7 @@
 
 ## Description
 
-[Visit the Deployed Site](https://jeffreydne.github.io/Jeff-Nelson-password-generator)
+[Visit the Deployed Site](https://jeffreydne.github.io/password-generator)
 
 The user inputs the number of characters &amp; what types of characters are desired in order to get a randomly generated password.
 
